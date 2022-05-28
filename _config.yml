@@ -8,8 +8,8 @@ author: Ivan Chornyi
 
 email: your-email@example.com
 
-baseurl: "Bootstrap-Resume-Jekyll" # the subpath of your site, e.g. blog
-url: "http://zemmyang.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. blog
+url: "https://armyhelp.nissan-rogue.club" # the base hostname & protocol for your site, e.g. http://example.com
 
 # --- General options --- #
 
