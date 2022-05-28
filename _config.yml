@@ -1,12 +1,12 @@
 # --- Required options --- #
 
 title-head: NRC Army Help
-subheading: I'm a cat. I'm a kitty cat.
+subheading: Nissan Rogue Club
 
 # Name of author
 author: Ivan Chornyi
 
-email: your-email@example.com
+email: nisan.rogue.club@gmail.com
 
 baseurl: "" # the subpath of your site, e.g. blog
 url: "https://armyhelp.nissan-rogue.club" # the base hostname & protocol for your site, e.g. http://example.com
@@ -14,9 +14,11 @@ url: "https://armyhelp.nissan-rogue.club" # the base hostname & protocol for you
 # --- General options --- #
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  24 лютого 2022 року ₚосія розпочала повномасштабне вторгнення на суверенні території України. 
+  Кожного дня руйнуються долі, домівки та життя цівильних, гинуть громадяни України. 
+  Усе через кривавого діда війни путіна та його посіпак-ₚашистів. 
+  Ми не залишаємося осоторонь, частина учасників клуба боронять Україну у лавах ЗСУ та ТРО, частина волонтерять.
+  Кожен з нас знає, що Україна обов'язково переможе. Бо це наша земля, це наша країна! Слава Україні! 🇺🇦
 
 # Excerpt word length - Truncate the excerpt of each post on the blog posts page to the specified number of words
 excerpt_length: 50
