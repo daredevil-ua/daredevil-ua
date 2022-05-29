@@ -12,12 +12,14 @@
             <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         </div>
         <p class="lead mb-5">{{ site.description }}</p>
-        <div class="social-icons">
+        <div class="social-icons text-center">
             {% for item in site.data.social-icons.social-icons %}
                 <a target="_blank" class="social-icon" href="{{ item.link }}"><i class="{{ item.fa-icon }}"></i></a>
             {% endfor %}
         </div>
         <hr>
-        <iframe width="560" height="315" src="{{ site.youtube_link }}" title="War in Ukraine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="text-center">
+            <iframe height="315px" width="60%" src="{{ site.youtube_link }}" title="War in Ukraine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 </section>
