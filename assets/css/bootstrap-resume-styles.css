@@ -7515,6 +7515,10 @@ button.bg-dark:focus {
   margin-bottom: 0 !important;
 }
 
+.main-heading {
+  font-size: 36pt;
+}
+
 .ml-0,
 .mx-0 {
   margin-left: 0 !important;
@@ -10131,5 +10135,16 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+
+.video {
+  height: 315px;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .video {
+    width: 80%;
   }
 }
