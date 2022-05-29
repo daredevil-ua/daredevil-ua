@@ -83,7 +83,7 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
-font-awesome-link: https://use.fontawesome.com/releases/v5.13.0/js/all.js
+font-awesome-link: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js
 bootstrap-bundle-min: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js
 jquery-min: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
 jquery-easing-min: https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js
