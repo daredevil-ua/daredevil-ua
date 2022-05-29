@@ -11,6 +11,8 @@ email: nisan.rogue.club@gmail.com
 baseurl: "" # the subpath of your site, e.g. blog
 url: "https://armyhelp.nissan-rogue.club" # the base hostname & protocol for your site, e.g. http://example.com
 
+youtube_link: https://www.youtube.com/embed/fruafJ4KMg4
+
 # --- General options --- #
 
 description: >- # this means to ignore newlines until "baseurl:"
@@ -26,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 excerpt_length: 50
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "jekyll, theme"
+keywords: "Nissan Rogue Club, Ukraine, war, putin"
 
 # --- Logo --- #
 
