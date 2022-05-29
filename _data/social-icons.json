@@ -1,22 +1,27 @@
 {
 	"social-icons": [{
-			"link": "https://linkedin.com",
-			"fa-icon": "fab fa-linkedin-in"
+			"link": "https://nissan-rogue.club/",
+			"fa-icon": "fab fa-link"
 		},
 
 		{
-			"link": "https://github.com",
-			"fa-icon": "fab fa-github"
+			"link": "https://www.youtube.com/c/NissanRogueClub",
+			"fa-icon": "fa-brands fa-youtube"
 		},
 
 		{
-			"link": "https://twitter.com",
-			"fa-icon": "fab fa-twitter"
+			"link": "https://www.instagram.com/nissan_rogue_club/",
+			"fa-icon": "fa-brands fa-instagram"
 		},
 
 		{
-			"link": "https://facebook.com",
-			"fa-icon": "fab fa-facebook-f"
+			"link": "https://www.facebook.com/groups/nissan.rogue.club/",
+			"fa-icon": "fa-brands fa-facebook-f"
+		},
+
+		{
+			"link": "https://t.me/nissan_rogue_club",
+			"fa-icon": "fa-brands fa-telegram"
 		}
 	]
 }
