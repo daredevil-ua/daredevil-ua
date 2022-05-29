@@ -1,13 +1,24 @@
 <section class="resume-section" id="team">
-    <div class="resume-section-content">
-        <h2 class="mb-5">Команда</h2>
-        <ul class="fa-ul mb-0">
-            {% for item in site.data.awards.awards %}
-            <li>
-                <span class="fa-li"><i class="{{ item.icon }} text-warning"></i></span>
-                {{ item.description }}
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+    
+    <div class="container">				
+		<div class="section-title">
+			<h2 class="mb-5">Команда</h2>
+		</div>				
+        <p class="lead mb-5">{{ site.team_description }}</p>
+		<div class="row text-center">
+			{% for member in site.data.team.members %}
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="our-team">
+                        <div class="team_img">
+                            <img src="{{ site.url }}/{{ site.baseurl }}/assets/img/{{ member.photo }}" alt="{{ member.name }}">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">{{ member.name }}</h3>
+                            <span class="post">{{ member.position }}</span>
+                        </div>
+                    </div>
+                </div><!--- END COL -->	
+            {% endfor %}															
+		</div><!--- END ROW -->
+	</div><!--- END CONTAINER -->	
 </section>

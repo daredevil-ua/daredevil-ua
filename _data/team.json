@@ -1,0 +1,24 @@
+{
+	"members": [
+        {
+			"name": "Іван",
+			"position": "Засновник клубу",
+            "photo": "ivan.jpg"
+		},
+        {
+			"name": "Кирило",
+			"position": "Адмін клубу",
+            "photo": "kyrylo.png"
+		},
+        {
+			"name": "Сергій",
+			"position": "Адмін клубу",
+            "photo": "serhii.png"
+		},
+        {
+			"name": "Олександр",
+			"position": "Головний по автозапчастинам",
+            "photo": "alex.png"
+		}
+	]
+}
