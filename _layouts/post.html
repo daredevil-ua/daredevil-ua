@@ -35,14 +35,32 @@
             <div class="row">
                 {% for i in (1..page.image_count) %}
                     <div class="col-md p-5">
-                        <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ i }}.jpeg" alt="{{ page.title }}">
+                        <a href="javascript:void(0)" class="pop">
+                            <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ i }}.jpeg" alt="{{ page.title }}">
+                        </a>
                     </div>
                 {% endfor %}
             </div>
-            
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">              
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview" style="width: 100%;" >
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         {% include foot.html %}
-
+        <script>
+            $(function() {
+                $('.pop').on('click', function() {
+                    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                    $('#imagemodal').modal('show');   
+                });		
+            });
+        </script>
     </body>
 </html>
