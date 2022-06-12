@@ -31,6 +31,15 @@
                       </div>
                 </div>
             </div>
+
+            {% if page.youtube_link %}
+            <br/>
+                <div class="row">
+                    <div class="col" align="center">
+                        <iframe height="400px" width="560px" src="{{ page.youtube_link }}" title="War in Ukraine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            {% endif %}
             
             <div class="row">
                 {% for i in (1..page.image_count) %}
