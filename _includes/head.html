@@ -8,9 +8,11 @@
     {% if page.title %}
         <meta content="{{ page.title }}" property="og:title">
         <meta content="article" property="og:type">
+        <title>{{ page.title }} | NRC</title>
     {% else %}
         <meta content="{{ site.title-head }} | {{ site.subheading }}" property="og:title">
         <meta content="website" property="og:type">
+        <title>{{ site.title-head }}</title>
     {% endif %}
     
     {% if page.preview %}
@@ -34,7 +36,7 @@
         <meta content="{{ site.url }}/{{ site.baseurl }}/{{ site.avatar }}" property="og:image">
     {% endif %}
 
-    <title>{{ site.title-head }}</title>
+    
     <link rel="icon" href="https://storage.googleapis.com/nissan-rogue-club/2020/04/2b7e7578-favicon.ico" sizes="32x32">
 
     <!-- Font Awesome icons (free version)-->
