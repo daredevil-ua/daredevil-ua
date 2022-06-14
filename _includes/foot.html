@@ -5,7 +5,14 @@
 <script src="{{ site.jquery-easing-min }}"></script>
 <!-- Core theme JS-->
 <script src="{{ site.url }}/{{ site.baseurl }}/assets/js/bootstrap-resume-scripts.js"></script>
-
+<script>
+    $(function() {
+        $('.pop').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal').modal('show');   
+        });		
+    });
+</script>
 
 
 

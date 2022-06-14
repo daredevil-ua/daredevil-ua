@@ -52,6 +52,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://localhost:4000/#about">Про нас</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://localhost:4000/#current">Поточна ціль</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://localhost:4000/#donate">Підтримати</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://localhost:4000/#report">Звіти</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://localhost:4000/#partners">Партнери</a></li>
@@ -98,6 +99,73 @@
         <div class="text-center">
             <iframe class="video" height="315px" width="80%" src="https://www.youtube.com/embed/r7BdPXFOUIA" title="War in Ukraine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+    </div>
+</section>
+            <hr class="m-0" />
+
+            <section class="resume-section" id="current">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Збір коштів для зв'язківців східного напрямку</h2>
+
+        <p class="lead mb-5">Триває збір на потреби зв'язківців зі складу 93 ОМБР (Холодний Яр), 95 ОДШБР, 3 ОТБР, 113а харьківськох бригади ТРО.
+До цього складу входить почесний учасник нашого клубу Сергій.
+Нажаль війна нікуди не поділась і ворог не зупиняється. Тим часом Сергій і його хлопці невпинно 24/7 працюють над тим щоб лінія фронту була забезпечена якісним, захищенним, 
+а найголовніше - безперебійним зв'язком. Зв'язок є дуже критичним для кожного підрозділу ЗСУ від розвідки до артилерії, від піхоти до ППО. 
+Саме завдяки безперебійному зв'язку арта може отримати координати та зробити прицільний постріл, засоби ППО можуть своєчасно відстежити ворожі ракети та знешкодити їх.
+Наразі є дуже велика потреба в фінансуванні на закупівлю агрегатів, кабелів живлення, кабелів передачі даних, та безліч всілякого інструменту.
+<br>
+Цього разу хлопці надіслали нам трохи цікавих ніштяків, які будуть розіграні серед усіх донатерів:
+<ul>
+  <li>
+    аналоГовнєт унікальний орочий комунікатор ☎️ (він позбавлен можливості виконувати свої функції але буде гарним нагадуванням що ви зробили вклад в нашу перемогу)
+  </li>
+  <li>
+    орочій підсумок 👝
+  </li>
+  <li>
+    орочій погон ⭐
+  </li>
+</ul>
+Переможців буде оголошено у <a target="_blank" href="https://t.me/nissan_rogue_club">чаті клубу</a>.</p>
+        <div><a class="js-scroll-trigger" href="http://localhost:4000/#donate">Підтримати >>></a></div>
+        <div class="row">
+            
+                <div class="col-md p-5">
+                    <a href="javascript:void(0)" class="pop">
+                        <img class="rounded img-fluid" src="http://localhost:4000/assets/img/current//1.jpeg" alt="">
+                    </a>
+                </div>
+            
+                <div class="col-md p-5">
+                    <a href="javascript:void(0)" class="pop">
+                        <img class="rounded img-fluid" src="http://localhost:4000/assets/img/current//2.jpeg" alt="">
+                    </a>
+                </div>
+            
+                <div class="col-md p-5">
+                    <a href="javascript:void(0)" class="pop">
+                        <img class="rounded img-fluid" src="http://localhost:4000/assets/img/current//3.jpeg" alt="">
+                    </a>
+                </div>
+            
+                <div class="col-md p-5">
+                    <a href="javascript:void(0)" class="pop">
+                        <img class="rounded img-fluid" src="http://localhost:4000/assets/img/current//4.jpeg" alt="">
+                    </a>
+                </div>
+            
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">              
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview" style="width: 100%;" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </section>
             <hr class="m-0" />
@@ -370,7 +438,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <!-- Core theme JS-->
 <script src="http://localhost:4000//assets/js/bootstrap-resume-scripts.js"></script>
-
+<script>
+    $(function() {
+        $('.pop').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal').modal('show');   
+        });		
+    });
+</script>
 
 
 
