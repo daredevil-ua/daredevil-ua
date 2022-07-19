@@ -1,5 +1,10 @@
 {
 	"members": [
+		{
+			"name": "Кожен участник клубу",
+			"position": "",
+			"photo": "nrc.jpg"
+		},
         {
 			"name": "Іван",
 			"position": "Засновник клубу",
