@@ -41,7 +41,7 @@
                 </div>
             {% endif %}
             
-            {% assign rows = page.image_count | divided_by: 4 | ceil %}
+            {% assign rows = page.image_count | divided_by: 4.0 | ceil %}
             
             {% if rows == 0 and page.image_count > 0 %}
                 {% assign rows = 1 %}
