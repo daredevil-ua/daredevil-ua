@@ -79,15 +79,6 @@
                 {% endif %}
             {% endfor %}
 
-            <div class="row">
-                {% for i in (1..page.image_count) %}
-                    <div class="col-md p-5">
-                        <a href="javascript:void(0)" class="pop">
-                            <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ i }}.jpeg" alt="{{ page.title }}">
-                        </a>
-                    </div>
-                {% endfor %}
-            </div>
             <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">              
