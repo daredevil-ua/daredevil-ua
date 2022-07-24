@@ -60,7 +60,7 @@
                                         <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ ic }}.jpeg" alt="{{ page.title }}">
                                     </a>
                                 </div>
-                                {% set last_num = last_num + 1 %}
+                                {% set last_num = last_num | plus: 1 %}
                             {% endif %}
                         {% endfor %}
                     </div>
@@ -77,7 +77,7 @@
                                         <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ ic }}.jpeg" alt="{{ page.title }}">
                                     </a>
                                 </div>
-                                {% set last_num = last_num + 1 %}
+                                {% set last_num = last_num | plus: 1 %}
                             {% endif %}
                         {% endfor %}
                     </div>
