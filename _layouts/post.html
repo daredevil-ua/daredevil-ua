@@ -42,8 +42,40 @@
             {% endif %}
             
             {% assign rows = page.image_count | divided_by: 4 | round %}
-
             
+            {% for i in (1..rows) %}
+                {% if i == 1 %}
+                    <div class="row">
+                        {% for ic in (1..4) %}
+                            {% if ic > page.image_count %}
+                                {% break %}
+                            {% else %}
+                            <div class="col-md p-5">
+                                <a href="javascript:void(0)" class="pop">
+                                    <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ ic }}.jpeg" alt="{{ page.title }}">
+                                </a>
+                            </div>
+                            {% increment last_num %}
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="row">
+                        {% assign start_img = last_num | plus: 1 %}
+                        {% assign last_img = start_img | plus: 3 %}
+                        {% for ic in (start_img..last_img) %}
+                            {% if ic > page.image_count %}
+                                {% break %}
+                            {% else %}
+                            <div class="col-md p-5">
+                                <a href="javascript:void(0)" class="pop">
+                                    <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ ic }}.jpeg" alt="{{ page.title }}">
+                                </a>
+                            </div>
+                            {% increment last_num %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endfor %}
 
             <div class="row">
                 {% for i in (1..page.image_count) %}
