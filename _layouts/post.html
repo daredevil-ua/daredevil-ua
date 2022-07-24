@@ -47,6 +47,7 @@
                 {% assign rows = 1 %}
             {% endif %}
 
+            {% set last_num = 0 %}
             {% for i in (1..rows) %}
                 {% if i == 1 %}
                     <div class="row">
@@ -54,12 +55,12 @@
                             {% if ic > page.image_count %}
                                 {% break %}
                             {% else %}
-                                {% increment last_num %}
                                 <div class="col-md p-5">
                                     <a href="javascript:void(0)" class="pop">
                                         <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ ic }}.jpeg" alt="{{ page.title }}">
                                     </a>
                                 </div>
+                                {% set last_num = last_num + 1 %}
                             {% endif %}
                         {% endfor %}
                     </div>
@@ -71,12 +72,12 @@
                             {% if ic > page.image_count %}
                                 {% break %}
                             {% else %}
-                                {% increment last_num %}
                                 <div class="col-md p-5">
                                     <a href="javascript:void(0)" class="pop">
                                         <img class="rounded img-fluid" src="{{ site.url }}/{{ site.baseurl }}assets/img/report/{{ page.post_id }}/{{ ic }}.jpeg" alt="{{ page.title }}">
                                     </a>
                                 </div>
+                                {% set last_num = last_num + 1 %}
                             {% endif %}
                         {% endfor %}
                     </div>
