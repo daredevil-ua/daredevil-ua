@@ -43,6 +43,8 @@
             
             {% assign rows = page.image_count | divided_by: 4 | ceil %}
             
+                rows: {{ rows }}
+
             {% for i in (1..rows) %}
                 {% if i == 1 %}
                     <div class="row">
