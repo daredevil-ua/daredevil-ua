@@ -43,7 +43,9 @@
             
             {% assign rows = page.image_count | divided_by: 4 | ceil %}
             
-                rows: {{ rows }}
+            {% if rows == 0 and page.image_count > 0 %}
+                {% assign rows = 1 %}
+            {% endif %}
 
             {% for i in (1..rows) %}
                 {% if i == 1 %}
