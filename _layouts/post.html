@@ -41,7 +41,7 @@
                 </div>
             {% endif %}
             
-            {% assign rows = page.image_count | divided_by: 4 | round %}
+            {% assign rows = page.image_count | divided_by: 4 | ceil %}
             
             {% for i in (1..rows) %}
                 {% if i == 1 %}
